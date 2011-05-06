@@ -1,0 +1,43 @@
+# This is a sample input file for the bedrock fault scarp model.
+#
+# GT, spring 2010
+#
+HILLSLOPE_LENGTH: length of hillslope, in meters
+2
+NUMBER_OF_NODES: number of model nodes (initially)
+2
+EROSION_RATE: slope-normal erosion rate in m/yr
+0.00028
+THRESHOLD_SLOPE: threshold slope angle (m/m)
+0.1
+THROW_RATE: fault throw rate, meters per year
+0.00125
+FAULT_DIP: fault dip angle, degrees
+45.0
+SEISMIC_INTERVAL: Time interval between earthquakes, in years
+1000
+RUN_DURATION: duration of run in years
+110000.0
+DT: time step duration in years
+1.0
+OPT_ERO_VAR: option for time variation in erosion rate
+OxygenIsotope
+AMPLITUDE: amplitude of sinusoidal variation (m/yr)
+0.0005
+PERIOD: period of sinusoidal variation (yr)
+100000.0
+PHASE: phase offset for sinusoidal variation (degrees)
+0
+DEL18O_FILENAME: name of file containing oxygen isotope curve
+gisp2_o18_interp100.txt
+DEL18O_POWER: exponent
+1.0
+# a MIN_ERORATE of +0.00002 gives about a post-7200 rate of 0.000028
+MIN_ERORATE:
+0.00002
+OPT_PLOT: option for plotting
+True
+OPT_EPS_PLOT: option for output to .eps file
+False
+PLOT_INTERVAL: time interval for plotting, in years
+1000.0
